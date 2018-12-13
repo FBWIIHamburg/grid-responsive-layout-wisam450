@@ -11,12 +11,16 @@ body {
     padding-left: 10%;
     padding-top:10px;
     padding-bottom:10px;
+    
     color: white;
     background-color: black;
   }
   header{
-    display: flex;
-    justify-content: space-between;
+    display:grid;
+    grid-template-columns: auto 30%;
+    /* justify-content: space-between; */
+    
+      
   }
   
   section {
@@ -26,18 +30,17 @@ body {
     padding-top:10px;
     padding-bottom:10px;
     background-color: lightgrey;
-    display: flex;
-    flex-wrap: wrap;
+   display:grid;
+   grid-template-columns: auto auto auto;
+   grid-gap: 5px;
     
   }
   
   section>h2{
-    flex: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
   }
-  section>div{
-    width: 33.33%;
-    padding: 5px;
-  }
+
   article {
     padding: 10px;
     background-color: white;
@@ -45,6 +48,7 @@ body {
   nav{
     padding-top:10px;
     padding-bottom:10px;
+    
   }
   nav ul {
     padding: 0;
